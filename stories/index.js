@@ -2794,6 +2794,17 @@ storiesOf("List components/MultiList", module)
     )
   )
   .add(
+    "With onData",
+   () => (
+      <MultiListRSDefault
+        showSearch
+        placeholder="Search Books"
+        onData={action("Data changed")}
+        title={text("title", "MultiList: Books Filter")}
+      />
+    )
+  )
+  .add(
     "With size",
    () => (
       <MultiListRSDefault
